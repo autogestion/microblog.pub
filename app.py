@@ -132,6 +132,7 @@ def inject_config():
 @app.after_request
 def set_x_powered_by(response):
     response.headers["X-Powered-By"] = "microblog.pub"
+    response.headers['Access-Control-Allow-Origin'] = '*'
     return response
 
 
