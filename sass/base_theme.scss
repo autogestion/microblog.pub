@@ -1,24 +1,3 @@
-// a4.io dark theme
-$background-color: #060606;
-$background-light: #222;
-$color: #808080;
-$color-title-link: #fefefe;
-$color-summary: #ddd;
-$color-light: #bbb;
-$color-menu-background: #222;
-$color-note-link: #666;
-$primary-color: #f7ca18;
-
-$background-color: #eee; 
-$background-light: #ccc;
-$color: #111;
-$color-title-link: #333;
-$color-light: #555;
-$color-summary: #111;
-$color-note-link: #333;
-$color-menu-background: #ddd;
-$primary-color: #1d781d; 
-
 .note-container p:first-child {
         margin-top: 0;
 }
@@ -49,9 +28,26 @@ a:hover {
 .gold {
   color: $primary-color;
 }
+.pcolor {
+  color: $primary-color;
+}
+
+.remote-follow-button {
+  background: $color-menu-background;
+  color: $color-light;
+  text-decoration: none;
+  padding: 5px 8px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.remote-follow-button:hover {
+  text-decoration: none;
+  background: $primary-color;
+  color: $background-color;
+}
 
 #header {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 
   .title {
     font-size: 1.2em;
@@ -65,7 +61,8 @@ a:hover {
     color: $color;
   }
   .menu {
-    padding: 20px 0 10px 0;
+    clear: both;
+    padding: 0 0 10px 0;
     ul {
       display: inline;
       list-style-type: none;
@@ -191,12 +188,24 @@ a:hover {
   }
 }
 
+.bar-item-no-hover {
+  background: $color-menu-background;
+  padding: 5px;
+  color: $color-light;
+  margin-right:5px;
+  border-radius:2px;
+}
+
 .bar-item {
   background: $color-menu-background;
   padding: 5px;
   color: $color-light;
   margin-right:5px;
   border-radius:2px;
+}
+.bar-item:hover {
+  background: $primary-color;
+  color: $background-color;
 }
 button.bar-item {
   border: 0
@@ -224,9 +233,9 @@ form.action-form {
 }
 .summary {
   color: $color-summary;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .summary a, .summay a:hover {
   color: $color-summary;
