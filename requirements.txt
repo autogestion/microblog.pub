@@ -17,5 +17,5 @@ bcrypt
 mf2py
 passlib
 git+https://github.com/erikriver/opengraph.git
-git+https://github.com/tsileo/little-boxes.git
 pyyaml
+git+https://github.com/autogestion/little-boxes@disable_ctx
